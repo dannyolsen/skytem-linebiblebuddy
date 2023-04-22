@@ -1,10 +1,19 @@
 # skytem-linebiblebuddy
 
-IN ORDER TO RUN LINEBIBLEBUDDY DO FOLLOWING STEPS
+WHAT THIS PROGRAM DOES
+Basically it will fill the block sheet in the linebible from the linereports.
+- Using the program first choose the folder with your linereports in. 
+- You need ALL line reports for a given block sheet in that folder.
+- the program will make a linebible_copy when it is run. If the program is being run 2 times in a row, the backup file will be overwritten by the new backup file.
+So fx. if you only want to fill block3 fields in the linebible, just keep all linereports for that block in a folder fx. called block3.
+The program will attempt to fill all sheets with matching numbers and will automatically exclude the 920000-930000.
+
+
+YOU NEED PYTHON IN ORDER TO RUN LINEBIBLEBUDDY - TO GET IT DO FOLLOWING STEPS
 
 1. use microsoft store to install the newest python version avaliable.
 
-2. launch a terminal by clicking windows key and write cmd and hit enter
+2. launch a terminal by clicking windows key and write "cmd" and hit enter
 
 3. verify python version with "python -V"
 
@@ -17,8 +26,7 @@ IN ORDER TO RUN LINEBIBLEBUDDY DO FOLLOWING STEPS
 pressing windows key -> "edit environmental variables for your account" -> "new" and add the paths specified 
 when running pip install.
 5.2 OPTION2
-Use CLI and fill this : setx NEW_VAR "C:\NewPath"
-
+Use CLI and fill this : setx NEW_VAR "C:\NewPath" (I haven't tried this but chatGPT says its it is do :)
 
 6. run "pip install -r requirements.txt" in terminal window again - this time you should have no errors.
 
